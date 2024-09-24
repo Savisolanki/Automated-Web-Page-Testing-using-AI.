@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test Page</title>
+</head>
+<body>
+<div class="card-body">
+     <h2>Form Automation Test</h2>
+    <form action="/success" method="get">
+        <div>
+            <label for="first-name">First name</label>
+            <div>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter first name">
+            </div>
+        </div>
+
+        <div>
+            <label for="last-name">Last name</label>
+            <div>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
+            </div>
+        </div>
+
+        <div>
+            <label for="email">Business email address</label>
+            <div>
+                <input type="email" id="email" name="email" placeholder="Enter email">
+            </div>
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <div>
+                <input type="text" id="phone" name="phone" placeholder="Enter phone number">
+            </div>
+        </div>
+
+        <div>
+            <label for="job-function">Job function</label>
+            <div>
+                <select id="job-function" name="job-function">
+                    <option value="">Select job function</option>
+                    <option value="manager">Manager</option>
+                    <option value="developer">Developer</option>
+                    <option value="marketing">Marketing Manager</option>
+                    <option value="sales">Sales</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label for="company-name">Company name</label>
+            <div>
+                <input type="text" id="company-name" name="company-name" placeholder="Enter company name">
+            </div>
+        </div>
+
+        <div>
+            <label for="company-size">Company size in number</label>
+            <div>
+                <input type="text" id="company-size" name="company-size" placeholder="Enter company size">
+            </div>
+        </div>
+
+        <div>
+            <label for="region">Region</label>
+            <div>
+                <select id="region" name="region">
+                    <option value="">Select region</option>
+                    <option value="north-america">North America</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label for="use-case">Use case</label>
+            <div>
+                <select id="use-case" name="use-case">
+                    <option value="">Select use case</option>
+                    <option value="lead-generation">Lead generation</option>
+                    <option value="onboarding">Customer onboarding</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label for="deployment-type">Deployment type</label>
+            <div>
+                <select id="deployment-type" name="deployment-type">
+                    <option value="">Select deployment type</option>
+                    <option value="cloud">Cloud-based</option>
+                    <option value="on-premise">On-premise</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- New From Date Field -->
+        <div>
+            <label for="fromdate">From Date</label>
+            <div>
+                <input type="date" id="fromdate" name="fromdate">
+            </div>
+        </div>
+
+        <!-- New To Date Field -->
+        <div>
+            <label for="todate">To Date</label>
+            <div>
+                <input type="date" id="todate" name="todate">
+            </div>
+        </div>
+
+        <div>
+            <label for="additional-info">Any Comments</label>
+            <div>
+                <textarea id="additional-info" name="additional-info" placeholder="Enter additional information"></textarea>
+            </div>
+        </div>
+
+        <div>
+            <label for="newsletter">Subscribe to newsletter</label>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+        </div>
+
+
+ <!-- Dropdown for Age Selection (Hidden initially) -->
+        <div id="age-select" class="hidden">
+            <label for="age">Select Age</label>
+            <select id="age" name="age">
+                <option value="">Select age</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46+">46+</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons for Gender Selection (Hidden initially) -->
+        <div id="gender-select" class="hidden">
+            <label>Select Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <div class="success-message" style="display: none;">
+        <p>Form submitted successfully!</p>
+    </div>
+</div>
+
+
+</body>
+</html>
